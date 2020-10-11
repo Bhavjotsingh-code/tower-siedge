@@ -11,8 +11,11 @@ class Slingshot{
         World.add(world, this.sling);
 
     }
+    attach(body){
+        this.sling.bodyA = body;
+    }
     fly(){
-        console.log("fly")
+        //console.log("fly")
         console.log(this.sling.bodyA);
         this.sling.bodyA =null;
         

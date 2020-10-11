@@ -118,6 +118,11 @@ function mouseDragged(){
   Matter.Body.setPosition(this.ball,{x:mouseX,y:mouseY});
 }
 function mouseReleased(){
-  console.log("release")
+  //console.log("release")
   slingshot.fly();
+}
+function keyPressed(){
+  if (keyCode === 32){
+    slingshot.attach(this.polygon)
+  }
 }
